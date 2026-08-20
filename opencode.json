@@ -40,6 +40,14 @@
     "/Users/mataberat/.config/opencode/plugins/karsalms-brain/index.ts"
   ],
   "model": "opencode-go/deepseek-v4-flash",
+  "enabled_providers": [
+    "opencode-go"
+  ],
+  "compaction": {
+    "auto": true,
+    "prune": true,
+    "preserve_recent_tokens": 20000
+  },
   "agent": {
     "ecc-build": {
       "description": "Primary coding agent for development work",
