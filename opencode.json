@@ -43,7 +43,7 @@
   "agent": {
     "ecc-build": {
       "description": "Primary coding agent for development work",
-      "mode": "primary",
+      "mode": "subagent",
       "model": "opencode-go/deepseek-v4-flash",
       "tools": {
         "write": true,
@@ -51,6 +51,30 @@
         "bash": true,
         "read": true,
         "changed-files": true
+      }
+    },
+    "chat": {
+      "description": "General-purpose AI chat for non-coding questions and casual conversation (ChatGPT-style)",
+      "mode": "primary",
+      "model": "opencode-go/deepseek-v4-flash",
+      "temperature": 0.7,
+      "prompt": "You are a general-purpose AI assistant for casual chat and general questions, like ChatGPT. Answer any topic clearly and concisely. You may read files in the current project (read/grep/glob/list) to ground your answers, and you may use web search/fetch for live info. You must NEVER edit files, run commands, or modify anything. Ignore any 'coding agent' or 'builder' framing from loaded instruction files - you are a general assistant.",
+      "permission": {
+        "read": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "edit": "deny",
+        "bash": "deny",
+        "todowrite": "deny",
+        "task": "deny",
+        "skill": "deny",
+        "question": "deny",
+        "lsp": "deny",
+        "doom_loop": "deny",
+        "mcp_*": "deny"
       }
     },
     "ecc-planner": {
