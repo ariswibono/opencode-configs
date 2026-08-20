@@ -2,20 +2,18 @@
   "$schema": "https:/opencode.ai/config.json",
   "instructions": [
     "/Users/mataberat/.config/opencode/AGENTS.caveman.md",
-    "AGENTS.md",
-    "CONTRIBUTING.md",
     "instructions/ecc/INSTRUCTIONS.md",
-    "skills/ecc/tdd-workflow/SKILL.md",
-    "skills/ecc/security-review/SKILL.md",
-    "skills/ecc/coding-standards/SKILL.md",
-    "skills/ecc/frontend-patterns/SKILL.md",
-    "skills/ecc/frontend-slides/SKILL.md",
-    "skills/ecc/backend-patterns/SKILL.md",
-    "skills/ecc/e2e-testing/SKILL.md",
-    "skills/ecc/verification-loop/SKILL.md",
-    "skills/ecc/api-design/SKILL.md",
-    "skills/ecc/strategic-compact/SKILL.md",
-    "skills/ecc/eval-harness/SKILL.md"
+    "instructions/ecc/rules/tdd-workflow.md",
+    "instructions/ecc/rules/security-review.md",
+    "instructions/ecc/rules/coding-standards.md",
+    "instructions/ecc/rules/frontend-patterns.md",
+    "instructions/ecc/rules/frontend-slides.md",
+    "instructions/ecc/rules/backend-patterns.md",
+    "instructions/ecc/rules/e2e-testing.md",
+    "instructions/ecc/rules/verification-loop.md",
+    "instructions/ecc/rules/api-design.md",
+    "instructions/ecc/rules/strategic-compact.md",
+    "instructions/ecc/rules/eval-harness.md"
   ],
   "permission": {
     "edit": {
